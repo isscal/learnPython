@@ -1,14 +1,13 @@
-from PIL import Image, ImageDraw, ImageFont
 import matplotlib.pyplot as plt
-import numpy as np
+from PIL import Image
 
 '''一：打开显示保存'''
 
-# img = Image.open('img/3.jpg')
-# plt.figure('meizi')
-# plt.imshow(img)
-# plt.axis('off')
-# plt.show()
+img = Image.open(r'D:\myCode\pyCode\learnPython\Python各种模块使用\img/3.jpg')
+plt.figure('meizi')
+plt.imshow(img)
+plt.axis('off')
+plt.show()
 
 
 '''二.图像通道几何变换裁剪'''

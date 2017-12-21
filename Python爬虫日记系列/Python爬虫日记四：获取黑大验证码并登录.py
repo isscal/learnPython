@@ -12,7 +12,7 @@ s = requests.session()
 response = s.get(url1, headers=headers)
 html = response.text
 soup = BeautifulSoup(html, 'html.parser')
-with open('img\code.jpg', 'wb') as f:
+with open(r'D:\myCode\pyCode\learnPython\Python爬虫日记系列\img\code.jpg', 'wb') as f:
     f.write(response.content)
 img = Image.open('img\code.jpg')
 img.show()
